@@ -1,0 +1,32 @@
+server:
+  port: 8080
+  servlet:
+    jsp:
+      init-parameters:
+        development: true    # 解决页面重启问题
+      context: /jsp
+
+# Dubbo配置
+dubbo:
+  application:
+    name: demo-consumer # 应用名
+    qos-enable: false # 关闭在线调试
+  registry:
+    address: zookeeper://localhost:2181 # 注册中心地址
+  consumer:
+    check: false # 启动时不检查
+
+
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/page/
+      suffix: .jsp                 # 页面处理
+    static-path-pattern: /**       # 静态资源过滤
+  servlet:
+    multipart:
+      max-request-size: 10MB       # 文件上传解析
+
+logging:
+  level:
+    com.dj.yyds.mapper: debug # 打印mapper级别的debug日志

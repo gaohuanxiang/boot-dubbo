@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="font/iconfont.css" />
+	</head>
+
+
+	<body>
+		<div class="panel_box">
+
+		</div>
+	</body>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/index.js"></script>
+	<script>
+		$(function() {
+			//遍历菜单
+			var data = [{
+					"id": "m1",
+					"text": "党风廉政建设",
+					"parentId": "root",
+
+					"url": "",
+
+					"children": [{
+							"id": "m1_1",
+							"text": "党风政风月报",
+							"parentId": "m1",
+
+							"children": [],
+						},
+						{
+							"id": "m1_2",
+							"text": "廉政约谈",
+							"parentId": "m1",
+
+							"children": [{
+									"id": "m1_7",
+									"text": "应谈话人员库",
+									"parentId": "m1_2",
+									"children": [],
+								},
+								{
+									"id": "m1_8",
+									"text": "廉政约谈在线管理",
+									"children": [],
+								}
+							]
+						},
+						{
+							"id": "m1_3",
+							"text": "巡视巡察在线管理",
+							"parentId": "m1",
+
+							"children": [],
+						},
+						{
+							"id": "m1_4",
+							"text": "活页夹",
+							"parentId": "m1",
+
+							"children": [],
+						},
+						{
+							"id": "m1_5",
+							"text": "派驻纪检组工作周报",
+							"parentId": "m1",
+
+							"children": [],
+						},
+						{
+							"id": "m1_6",
+							"text": "重大节日四风监督报告",
+							"parentId": "m1",
+
+							"children": [],
+						}
+					]
+				},
+				{
+					"id": "m2",
+					"text": "廉洁风险防控及以案促改",
+					"parentId": "root",
+
+					"children": [{
+							"id": "m2_1",
+							"text": "日常监督",
+							"parentId": "m2",
+
+							"children": [{
+								"id": "m2_3",
+								"text": "关键岗位管理",
+								"parentId": "m2_1",
+
+								"children": [],
+							}]
+						},
+						{
+							"id": "m2_2",
+							"text": "以案促改",
+							"parentId": "m2",
+
+							"children": [],
+						}
+					]
+				},
+				{
+					"id": "m3",
+					"text": "信访及案件",
+					"parentId": "root",
+
+					"children": [{
+							"id": "m3_1",
+							"text": "信访台账",
+							"parentId": "m3",
+
+							"children": [],
+						},
+						{
+							"id": "m3_2",
+							"text": "登记材料管理",
+							"parentId": "m3",
+
+							"children": [],
+						},
+						{
+							"id": "m3_3",
+							"text": "处分人员管理",
+							"parentId": "m3",
+
+							"children": [],
+						},
+						{
+							"id": "m3_4",
+							"text": "统计分析",
+							"parentId": "m3",
+
+							"children": [],
+						},
+						{
+							"id": "m3_5",
+							"text": "档案管理",
+							"parentId": "m3",
+
+							"children": [],
+						},
+						{
+							"id": "m3_6",
+							"text": "廉洁证明",
+							"parentId": "m3",
+
+							"children": [],
+						}
+					]
+				},
+				{
+					"id": "m4",
+					"text": "综合管理",
+					"parentId": "root",
+
+					"children": [{
+						"id": "m4_1",
+						"text": "考核管理",
+						"parentId": "m4",
+
+						"children": [],
+					}]
+				},
+				{
+					"id": "m5",
+					"text": "应用分享",
+					"parentId": "root",
+
+					"children": [{
+							"id": "m5_1",
+							"text": "制度办法库",
+							"parentId": "m5",
+
+							"children": [{
+									"id": "m5_2",
+									"text": "制度办法上传",
+									"parentId": "m5_1",
+
+									"children": [],
+								},
+								{
+									"id": "m5_3",
+									"text": "制度办法在线查看",
+									"parentId": "m5_1",
+
+									"children": [],
+								}
+							]
+						},
+						{
+							"id": "m5_4",
+							"text": "备用菜单",
+							"parentId": "m5",
+
+							"children": [],
+						}
+					]
+				},
+				{
+					"id": "PURE_SCSYS",
+					"text": "安全管理",
+					"parentId": "root",
+
+					"children": [{
+							"id": "PURE_RESOURCESGROUP",
+							"text": "应用系统管理",
+							"parentId": "PURE_SCSYS",
+
+							"children": [],
+						},
+						{
+							"id": "PURE_RESOURCES",
+							"text": "系统资源管理",
+							"parentId": "PURE_SCSYS",
+
+							"children": [],
+						},
+						{
+							"id": "PURE_USER_EXTCONF",
+							"text": "用户扩展属性管理",
+							"parentId": "PURE_SCSYS",
+
+							"children": [],
+						},
+						{
+							"id": "PURE_USER",
+							"text": "用户管理",
+							"parentId": "PURE_SCSYS",
+
+							"children": [],
+						},
+						{
+							"id": "PURE_ROLE",
+							"text": "角色管理",
+							"parentId": "PURE_SCSYS",
+
+							"children": [],
+						},
+						{
+							"id": "PURE_POST",
+							"text": "系统公告",
+							"parentId": "PURE_SCSYS",
+
+							"children": [],
+						},
+						{
+							"id": "PURE_LOG",
+							"text": "日志管理",
+							"parentId": "PURE_SCSYS",
+
+							"children": [{
+									"id": "PURE_LOGENTER",
+									"text": "登录管理",
+									"parentId": "PURE_LOG",
+
+							
+
+									"children": [],
+								},
+								{
+									"id": "PURE_MODULE_VISIT_LOG",
+									"text": "模块访问日志",
+									"parentId": "PURE_LOG",
+
+									"url": "/jj/pure/VisitLog.action",
+
+									"children": [],
+								},
+								{
+									"id": "PURE_VISITORORD_LOG",
+									"text": "模块访问者排名",
+									"parentId": "PURE_LOG",
+
+								
+
+									"children": [],
+								},
+								{
+									"id": "PURE_MODELORD_LOG",
+									"text": "模块访问排名",
+									"parentId": "PURE_LOG",
+
+					
+
+									"children": [],
+								}
+							]
+						}
+					]
+				}
+			]
+
+			//遍历菜单
+			forEachNav(data);
+			
+			//点击展开事件
+			liClick(".panel_box");
+			
+
+		})	
+	</script>
+
+</html>
